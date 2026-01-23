@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Portfolio</title>
+	<title>Immanuel Wandeto - Senior Full-Stack Engineer & SaaS Founder</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,6 +20,67 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Enhanced CTA Styling */
+		.cta-hire {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white !important;
+			border: none !important;
+			font-weight: 700;
+			letter-spacing: 0.15em;
+			padding: 18px 50px !important;
+			font-size: 1.1em !important;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+			text-align: center !important;
+			display: inline-flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			width: auto !important;
+			min-width: 200px;
+		}
+
+		.cta-hire:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+			background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+		}
+
+		.cta-hire:active {
+			transform: translateY(0);
+		}
+
+		/* Center the actions list in hero */
+		#intro .actions {
+			justify-content: center;
+		}
+
+		/* Footer CTA Section */
+		footer#footer .split.contact > section:first-child {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		footer#footer .split.contact > section:first-child h3 {
+			margin-bottom: 10px;
+		}
+
+		footer#footer .split.contact > section:first-child p {
+			margin-bottom: 20px;
+			color: #888;
+		}
+
+		footer#footer .split.contact > section:first-child .actions {
+			margin: 0;
+			justify-content: center;
+		}
+		footer#footer button {
+			color: white important!
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -29,15 +90,18 @@
 
 		<!-- Intro -->
 		<div id="intro">
-			<h1>My Portfolio</h1>
+			<h1>Immanuel Wandeto</h1>
 			<p>
-				Hi, I'm Immanuel Wandeto — a full-stack developer and UI designer who builds web applications that solve real problems.
-				From SaaS platforms with payment integrations to e-commerce solutions and mobile UI/UX design, I turn ideas into polished, production-ready products.
-				Looking to hire a developer who ships? Or need a custom web solution for your business?
-				Either way, you're in the right place. Let's build something great.
+				Senior Full-Stack Engineer & SaaS Founder. I build production-grade web applications using Go, SvelteKit, and PostgreSQL.
+				Currently scaling <strong>Aptly</strong> — a SaaS platform processing bookings and payments for service businesses across Kenya.
+				<br><br>
+				<em>Also a songwriter & vocalist (RnB/Afro genres) — because great engineering requires creative thinking.</em>
+				<br><br>
+				Open to remote senior backend/full-stack roles and strategic partnerships. Let's build something that scales.
 			</p>
 			<ul class="actions">
-				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				<li><a href="mailto:immanuelwandeto@proton.me" class="button large cta-hire">Hire Me</a></li>
+				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">View Work</a></li>
 			</ul>
 		</div>
 
@@ -47,10 +111,12 @@
 				<li class="active"><a href="index.html">Portfolio</a></li>
 			</ul>
 			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/immanuel-wandeto/" class="icon brands fa-linkedin" target="_blank"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/ManuelWandeto" class="icon brands fa-github" target="_blank"><span
+							class="label">GitHub</span></a></li>
 				<li><a href="mailto:immanuelkibui50@gmail.com" class="icon alt fas fa-envelope"><span
 							class="label">Mail</span></a></li>
-				<li><a href="https://github.com/ManuelWandeto" class="icon brands fa-github"><span
-							class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
 
@@ -61,20 +127,25 @@
 			<article class="post featured">
 				<header class="major">
 					<h2>
-						<a href="https://youtu.be/M27VPfh3EPg" target="_blank">
-							THE APTLY BOOKING PLATFORM
+						<a href="https://blog.squarely.online/automate-your-service-business-a-first-look-at-the-aptly-booking-system/" target="_blank">
+							APTLY BOOKING PLATFORM — Flagship SaaS Product
 						</a>
 					</h2>
 					<p>
-						An online web app (built with Golang, Sveltekit & postgreSQL) that facilitates online bookings for service businesses with support for online payments via pesapal payment integration coupled with an entire admin business administration suite complete with analytics, bookings, staff, services and schedules management as well as a dedicated staff portal where staff can view their upcoming appointments and manage their own schedules.
-						The application also features sms and email notifications for important things such as new bookings and payments.
+						<strong>Tech Stack:</strong> Go (backend), SvelteKit (frontend), PostgreSQL, Docker, Linux
+						<br><br>
+						A production-grade SaaS platform enabling service businesses (salons, barbershops, clinics) to manage online bookings, payments, and operations at scale.
+						<br><br>
+						<strong>Key Features:</strong> Real-time booking engine, multi-channel payment processing (Pesapal, M-Pesa), staff scheduling, analytics dashboard, SMS/email notifications, staff portal, admin suite.
+						<br><br>
+						<strong>Impact:</strong> Drove 40% revenue increase. Increased customer conversion by 20% through PWA re-architecture, solving key mobile-first sales objections. Currently processing bookings for service businesses across Kenya.
 					</p>
 				</header>
-				<a href="https://youtu.be/M27VPfh3EPg"class="image main" target="_blank"><img src="images/aptly_dribble_shot.png"
+				<a href="https://blog.squarely.online/automate-your-service-business-a-first-look-at-the-aptly-booking-system/" class="image main" target="_blank"><img src="images/aptly_dribble_shot.png"
 						alt="" /></a>
 				<ul class="actions special">
-					<li><a href="https://youtu.be/M27VPfh3EPg" class="button large" target="_blank">Check It Out</a></li>
-					<li><a href="https://www.linkedin.com/pulse/from-concept-cloud-building-full-stack-saas-platform-service-wandeto-qejlf" class="button large" target="_blank">Read The Case Study</a></li>
+					<li><a href="https://blog.squarely.online/automate-your-service-business-a-first-look-at-the-aptly-booking-system/" class="button large" target="_blank">Learn More</a></li>
+					<li><a href="https://www.linkedin.com/pulse/from-concept-cloud-building-full-stack-saas-platform-service-wandeto-qejlf" class="button large" target="_blank">Read Case Study</a></li>
 				</ul>
 
 			</article>
@@ -85,139 +156,149 @@
 					<header>
 						<h2>
 							<a href="https://www.linkedin.com/pulse/1-million-kes-one-night-how-my-custom-ticketing-platform-wandeto-ahnbf" target="_blank">
-								KULTUREPASS - EVENT TICKETING PLATFORM
+								KULTUREPASS — Event Ticketing Platform
 							</a>
 						</h2>
 						<p>
-							An online web platform (built with PHP & MySQL) that facilitates online ticket sales (via pesapal & mpesa paybill), venue layout design and ticket check-in at the gate.
-							The app was able to facilitate ticket sales of 1M+ for a single event at its launch.
+							<strong>Tech Stack:</strong> PHP, MySQL, Pesapal/M-Pesa integration
+							<br><br>
+							Custom ticketing platform processing 1M+ KES in ticket sales for a single event launch. Features a QR-based gate check-in system,
+							a graphical venue layout engine for custom seat selection and multi-channel payment processing.
+							<br><br>
+							<strong>Outcome:</strong> Demonstrates ability to build high-throughput payment systems under pressure.
 						</p>
 					</header>
 					<a href="https://www.linkedin.com/pulse/1-million-kes-one-night-how-my-custom-ticketing-platform-wandeto-ahnbf" class="image main" target="_blank"><img
 							src="images/kulturepass_ticketing.png" alt="" /></a>
 					<ul class="actions special">
-						<li><a href="https://kulturepass.co.ke" class="button large" target="_blank">Check It Out</a></li>
-						<li><a href="https://www.linkedin.com/pulse/1-million-kes-one-night-how-my-custom-ticketing-platform-wandeto-ahnbf" class="button large" target="_blank">Read The Case Study</a></li>
+						<li><a href="https://kulturepass.co.ke" class="button large" target="_blank">View Platform</a></li>
+						<li><a href="https://www.linkedin.com/pulse/1-million-kes-one-night-how-my-custom-ticketing-platform-wandeto-ahnbf" class="button large" target="_blank">Read Case Study</a></li>
 					</ul>
 				</article>
 				<article>
 					<header>
 						<h2>
 							<a href="https://www.linkedin.com/pulse/case-study-digital-transformation-micro-finance-future-wandeto-tuu6e" target="_blank">
-								FUTURE JEWELS - SACCO MANAGEMENT FINTECH P.W.A
+								FUTURE JEWELS — FinTech SACCO Management Platform
 							</a>
 						</h2>
 						<p>
-							An online FinTech web platform that facilitates the management of a Kenyan Sacco. Created to transform their operations from traditional paper record-keeping to
-							using a single integrated web system that encapsulates all their systems and processes. It covers everything from contributions & MMF investment tracking, meetings management (including recording minutes) to handling fines.
+							<strong>Tech Stack:</strong> Go (backend), Sveltekit (Frontend), PostgreSQL, Docker, Linux
+							<br><br>
+							Led digital transformation of a local SACCO from manual record-keeping to an integrated web system. Encapsulates all operations: contributions tracking, investment management, meeting minutes recording, and fine management.
+							<br><br>
+							<strong>Outcome:</strong> Demonstrates ability to architect complex business logic and successfully migrate legacy systems to modern platforms while preserving institutional knowledge.
 						</p>
 					</header>
 					<a href="https://www.linkedin.com/pulse/case-study-digital-transformation-micro-finance-future-wandeto-tuu6e" class="image main" target="_blank"><img
 							src="images/future_jewels_shot.png" alt="" /></a>
 					<ul class="actions special">
-						<li><a href="https://www.linkedin.com/pulse/case-study-digital-transformation-micro-finance-future-wandeto-tuu6e" class="button large" target="_blank">Read The Case Study</a></li>
+						<li><a href="https://www.linkedin.com/pulse/case-study-digital-transformation-micro-finance-future-wandeto-tuu6e" class="button large" target="_blank">Read Case Study</a></li>
 						</ul>
 				</article>
 				<article>
 					<header>
 						<h2>
 							<a href="https://dossierlounge.com" target="_blank">
-								NIGHT CLUB LANDING PAGE
+								DOSSIER LOUNGE — Nightclub Landing & Reservation System
 							</a>
 						</h2>
 						<p>
-							A landing page website for a night club in siaya Kenya, complete with features such as online researvations,
-						contact form, modern admin dashboard for content management and analytics tracking via google analytics.
+							<strong>Tech Stack:</strong> Strapi JS CMS (backend), Sveltekit (Frontend), Docker, Linux
+							<br><br>
+							Modern landing page built in 7 days with integrated online reservations, contact management, and analytics tracking. Empowered marketing team with self-service content management through Strapi admin dashboard.
+							<br><br>
+							<strong>Outcome:</strong> Drove 1,000+ user interactions in first year. Demonstrates ability to deliver high-quality projects through rapid development while enabling client autonomy.
 						</p>
 					</header>
 					<a href="https://dossierlounge.com" class="image main" target="_blank"><img
 							src="images/dossier_shot.png" alt="" /></a>
 					<ul class="actions special">
-						<li><a href="https://dossierlounge.com" class="button large" target="_blank">Check It Out</a></li>
-						<li><a href="https://www.linkedin.com/pulse/from-zero-1k-monthly-users-7-days-rapid-development-case-wandeto-uiegf" class="button large" target="_blank">Read The Case Study</a></li>
+						<li><a href="https://dossierlounge.com" class="button large" target="_blank">View Site</a></li>
+						<li><a href="https://www.linkedin.com/pulse/from-zero-1k-monthly-users-7-days-rapid-development-case-wandeto-uiegf" class="button large" target="_blank">Read Case Study</a></li>
 					</ul>
 				</article>
 				<article>
 					<header>
 						<h2>
 							<a href="https://shadows.squarely.online" target="_blank">
-								TURN-KEY E-COMMERCE-TEMPLATE
+								Turn-Key E-Commerce Template
 							</a>
 						</h2>
-						<a href="https://shadows.squarely.online" class="image main" target="_blank"><img
-							src="images/commerce_template_cover.png" alt="" /></a>
 						<p>
-							An e-commerce website template for selling goods online, complete with customer log-in, add-to-cart,
-							wishlist and checkout. Integrated with pesapal to support multiple playment methods e.g mobile money (via
-							M-pesa/Airtel money), credit card processing
-							and paypal payments. The template also features a robust admin dashboard allowing you to add/edit your
-							products and
-							view analytics such as
-							sales trends, revenue/profit and top selling products/product categories.
+							<strong>Tech Stack:</strong> PHP, Alpine Js, MySQL.
+							<br><br>
+							Production-ready e-commerce template featuring customer authentication, shopping cart, wishlist, and checkout. Integrated with Pesapal for multi-channel payments (M-Pesa, Airtel Money, credit cards, PayPal).
+							<br><br>
+							Includes robust admin dashboard for product management, inventory tracking, and sales analytics (revenue, profit, top products). Customized and deployed for multiple clients.
+							<br><br>
+							<strong>Outcome:</strong> Increased company revenue by 20%. One client achieved 60% increase in their overall sales. Demonstrates ability to build reusable, high-impact SaaS products.
 						</p>
 					</header>
-
+					<a href="https://shadows.squarely.online" class="image main" target="_blank"><img
+							src="images/commerce_template_cover.png" alt="" /></a>
 					<ul class="actions special">
-						<li><a href="https://shadows.squarely.online" class="button large" target="_blank">Check It Out</a></li>
-						<li><a href="https://www.linkedin.com/pulse/from-local-shop-online-sales-story-e-commerce-engine-immanuel-wandeto-o64ef" class="button large" target="_blank">Read The Case Study</a></li>
+						<li><a href="https://shadows.squarely.online" class="button large" target="_blank">View Template</a></li>
+						<li><a href="https://www.linkedin.com/pulse/from-local-shop-online-sales-story-e-commerce-engine-immanuel-wandeto-o64ef" class="button large" target="_blank">Read Case Study</a></li>
 					</ul>
-
 				</article>
 				<article>
 					<header>
 						<h2>
 							<a href="https://roadhouse.co.ke/" target="_blank">
-								The Roadhouse Project
+								ROADHOUSE — Restaurant Landing & Order Management
 							</a>
 						</h2>
+						<p>
+							<strong>Tech Stack:</strong> PHP, Alpine Js, MySQL.
+							<br><br>
+							Modern landing page with integrated online ordering, payment processing, and delivery management. Includes admin dashboard for order tracking, menu management, and homepage customization with Google Analytics integration.
+							<br><br>
+							<strong>Outcome:</strong> Demonstrates ability to build complete business management systems with customer-facing and admin interfaces.
+						</p>
 					</header>
 					<a href="https://roadhouse.co.ke/" class="image fit" target="_blank"><img src="images/roadhouse_cover.png"
 							alt="" /></a>
-					<p>
-						A landing page for roadhouse grill restaurant/lounge with a dedicated order page for facilitating online
-						orders, payments and delivery.
-						The page is setup with google analytics and a backend admin page for the managers to view their
-						orders/inquiries,
-						add and edit order items, update their menu as well as customize their homepage as they wish.
-					</p>
 					<ul class="actions special">
-						<li><a href="https://roadhouse.co.ke/" class="button" target="_blank">Check It Out</a></li>
+						<li><a href="https://roadhouse.co.ke/" class="button" target="_blank">View Site</a></li>
 					</ul>
 				</article>
 				<article>
 					<header>
-						<h2><a href="https://actual-shredders.web.app" target="_blank">Online Booking Website<br />
-								For Shredding services</a></h2>
+						<h2><a href="https://actual-shredders.web.app" target="_blank">ACTUAL SHREDDERS — Document Shredding Service Booking</a></h2>
+						<p>
+							<strong>Tech Stack:</strong> Angular, Firebase Cloud Functions, Firebase Firestore database.
+							<br><br>
+							Their first online booking platform for secure document shredding services. Enables B2B customers to schedule services, track jobs, and manage billing through an intuitive interface. Successfully took their service digital.
+							<br><br>
+							<strong>Impact:</strong> Drove approximately 30% revenue increase. Demonstrates ability to build service-based booking systems with real-time availability and customer management while enabling B2B service digitization.
+						</p>
 					</header>
 					<a href="https://actual-shredders.web.app" class="image fit" target="_blank"><img
 							src="images/ActualShreddersW.png" alt="" /></a>
-					<p>
-						A website currently serving "Actual Shredders". A company that provides secure and confidential
-						document shredding services to other businesses. Their clients now get to book the service they need on the
-						website.
-					</p>
 					<ul class="actions special">
-						<li><a href="https://actual-shredders.web.app" class="button" target="_blank">Check It Out</a></li>
-						<li><a href="https://www.linkedin.com/pulse/case-study-how-strategic-design-boosted-revenue-30-boring-wandeto-uccbf" class="button" target="_blank">Read The Case Study</a></li>
+						<li><a href="https://actual-shredders.web.app" class="button" target="_blank">View Site</a></li>
+						<li><a href="https://www.linkedin.com/pulse/case-study-how-strategic-design-boosted-revenue-30-boring-wandeto-uccbf" class="button" target="_blank">Read Case Study</a></li>
 					</ul>
 				</article>
 				<article>
 					<header>
 						<h2><a href="https://alecko-8bca5.web.app" target="_blank">
-								The Alecko App <br />
-								- UI Design project</a></h2>
+								ALECKO — AI Instagram Assistant (UI/UX Design)</a></h2>
+						<p>
+							<strong>Design & Product:</strong> Full UI/UX prototype + high-converting landing page
+							<br><br>
+							Personal digital Instagram assistant that automates audience engagement. Designed the complete user experience and built a conversion-optimized landing page to validate market demand.
+							<br><br>
+							<strong>Impact:</strong> Generated 12,000+ users on waiting list. Demonstrates ability to design investor-ready prototypes and build high-converting product landing pages.
+						</p>
 					</header>
 					<a href="https://alecko-8bca5.web.app" class="image fit" target="_blank"><img src="images/alecko_app_project.png"
 							alt="" /></a>
-					<p>
-						Your personal digital instagram assistant,
-						A mobile app that engages with your target audience on instagram automatically
-						to put your brand infront of more people while you focus on your business.
-					</p>
 					<ul class="actions special">
 						<li>
-							<a href="https://www.figma.com/file/i3GZLRVJSPXzGaBTCrGh9h/Alecko-mobile?node-id=0%3A1" class="button" target="_blank">Check it Out</a>
-							<a href="https://www.linkedin.com/pulse/from-idea-12k-leads-designing-investor-ready-product-market-wandeto-6wqmf" class="button" target="_blank">Read The Case Study</a>
+							<a href="https://www.figma.com/file/i3GZLRVJSPXzGaBTCrGh9h/Alecko-mobile?node-id=0%3A1" class="button" target="_blank">View Design</a>
+							<a href="https://www.linkedin.com/pulse/from-idea-12k-leads-designing-investor-ready-product-market-wandeto-6wqmf" class="button" target="_blank">Read Case Study</a>
 						</li>
 					</ul>
 				</article>
@@ -225,23 +306,25 @@
 					<header>
 						<h2><a
 								href="https://www.linkedin.com/pulse/from-idea-investment-uiux-got-student-wellness-app-immanuel-wandeto-xnjhf"
-								target="_blank">Resolution App<br />
-								Mobile UI design</a></h2>
+								target="_blank">RESOLUTION APP — Student Wellness Platform (UI/UX Design)</a></h2>
+						<p>
+							<strong>Design & Product:</strong> High-fidelity prototype + development-ready design system
+							<br><br>
+							All-in-one student wellness platform for goal tracking and management of time, finances, wellness, and career. Designed complete UI/UX and built comprehensive design system for development handoff.
+							<br><br>
+							<strong>Impact:</strong> Secured investor green light for development. Demonstrates ability to deliver investor-ready prototypes and scalable design systems.
+						</p>
 					</header>
 					<a href="https://www.linkedin.com/pulse/from-idea-investment-uiux-got-student-wellness-app-immanuel-wandeto-xnjhf"
 						target="_blank" class="image fit"><img src="images/resolution_shot.png" alt="" /></a>
-					<p>
-						Concept design of a mobile app geared towards students and career people to assist them in goal tracking and
-						management of their time, finances, wellness and study/career.
-					</p>
 					<ul class="actions special">
 						<li>
 							<a
 								href="https://www.figma.com/file/dHbtINPduUF7pSwdCXwr14/My-life-goals-tracker?type=design&node-id=0%3A1&mode=design&t=63IGlkGUNxkXNt2W-1"
-								class="button" target="_blank">Check it Out</a>
+								class="button" target="_blank">View Design</a>
 								<a
 								href="https://www.linkedin.com/pulse/from-idea-investment-uiux-got-student-wellness-app-immanuel-wandeto-xnjhf"
-								class="button" target="_blank">Read The Case Study</a>
+								class="button" target="_blank">Read Case Study</a> landing
 						</li>
 					</ul>
 				</article>
@@ -249,23 +332,25 @@
 					<header>
 						<h2><a
 								href="https://www.linkedin.com/pulse/billboard-advertising-your-pocket-case-study-immanuel-wandeto-96wrf"
-								target="_blank">Billboards On-Demand<br />
-								Mobile UI design</a></h2>
+								target="_blank">SMART BILLBOARDS — On-Demand Ad Platform (UI/UX Design)</a></h2>
+						<p>
+							<strong>Design & Product:</strong> High-fidelity UI/UX prototype
+							<br><br>
+							Mobile app concept bringing on-demand billboard advertising to business owners. Enables users to post ads to a network of smart billboards at any budget, democratizing out-of-home advertising and removing traditional barriers to entry.
+							<br><br>
+							<strong>Outcome:</strong> Delivered comprehensive UI/UX prototype for client's product vision. Demonstrates ability to design complex user experience flows based on business requirements.
+						</p>
 					</header>
 					<a href="https://www.linkedin.com/pulse/billboard-advertising-your-pocket-case-study-immanuel-wandeto-96wrf"
 						target="_blank" class="image fit"><img src="images/Create campaign.png" alt="" /></a>
-					<p>
-						Concept design of a mobile app that aims to bring on-demand billboard advertising to the average business
-						owner, giving them the ability to run ads on smart billboards on the fly.
-					</p>
 					<ul class="actions special">
 						<li>
 							<a
 								href="https://www.figma.com/file/tMrUyFxvNgR3oykkwiEtIZ/Smart-Billboards?node-id=0%3A1&t=HGUCI39D5WlZpPxO-1"
-								class="button" target="_blank">Check it Out</a>
+								class="button" target="_blank">View Design</a>
 								<a
 								href="https://www.linkedin.com/pulse/billboard-advertising-your-pocket-case-study-immanuel-wandeto-96wrf"
-								class="button" target="_blank">Read The Case Study</a>
+								class="button" target="_blank">Read Case Study</a>
 						</li>
 					</ul>
 				</article>
@@ -273,23 +358,25 @@
 					<header>
 						<h2><a
 								href="https://www.linkedin.com/pulse/case-study-designing-hadithitv-mobile-app-turns-photos-wandeto-sxx3f"
-								target="_blank">Hadithi.tv - Turn photos into stories with AI<br />
-								Mobile UI design</a></h2>
+								target="_blank">HADITHI.TV — AI Photo Editing App (UI/UX Design)</a></h2>
+						<p>
+							<strong>Design & Product:</strong> High-fidelity UI/UX prototype
+							<br><br>
+							AI-powered photo editing app with advanced features including auto-enhance, intelligent subject selection and removal, AI-powered video editor, and frame generator. Designed complete user experience for seamless AI integration.
+							<br><br>
+							<strong>Outcome:</strong> Delivered production-ready design prototype while client developed underlying AI models. Demonstrates ability to design complex AI-driven interfaces.
+						</p>
 					</header>
 					<a href="https://www.linkedin.com/pulse/case-study-designing-hadithitv-mobile-app-turns-photos-wandeto-sxx3f"
 						target="_blank" class="image fit"><img src="images/Editor-Presentation.png" alt="" /></a>
-					<p>
-						Concept design of a mobile photo-editing app infused with AI tools such as auto-enhance and auto-selection
-						of subject as well as a AI powered video editor and frame generator.
-					</p>
 					<ul class="actions special">
 						<li>
 							<a
 								href="https://www.figma.com/file/kiZ7I62yIA3k0CWnbKOr6E/Hadithi.tv?node-id=0%3A1&t=eRJ3aensHFDIZ8aW-1"
-								class="button" target="_blank">Check it Out</a>
+								class="button" target="_blank">View Design</a>
 								<a
 								href="https://www.linkedin.com/pulse/case-study-designing-hadithitv-mobile-app-turns-photos-wandeto-sxx3f"
-								class="button" target="_blank">Read The Case Study</a>
+								class="button" target="_blank">Read Case Study</a>
 						</li>
 					</ul>
 				</article>
@@ -302,12 +389,18 @@
 		<footer id="footer">
 			<section class="split contact">
 				<section>
-					<h3>Social</h3>
+					<h3>Ready to work together?</h3>
+					<p>Let's discuss your project or opportunity.</p>
+					<ul class="actions">
+						<li><a href="mailto:immanuelwandeto@proton.me" class="button large cta-hire">Hire Me</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Contact</h3>
 					<ul class="icons alt">
-						<li><a href="mailto:immanuelkibui50@gmail.com" class="icon alt fas fa-envelope"><span
-									class="label">GitHub</span></a></li>
-						<li><a href="https://github.com/ManuelWandeto" class="icon brands alt fa-github"><span
-									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/immanuel-wandeto/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/ManuelWandeto" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:immanuelkibui50@gmail.com" class="icon alt fas fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</section>
 			</section>
@@ -316,8 +409,8 @@
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
-				<li>Immanuel wandeto &copy; Portfolio</li>
-				<li></li>
+				<li>&copy; Immanuel Wandeto 2026</li>
+				<li>Senior Full-Stack Engineer & SaaS Founder</li>
 			</ul>
 		</div>
 
