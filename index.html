@@ -50,6 +50,100 @@
 			transform: translateY(0);
 		}
 
+		/* Book Me CTA for Music */
+		.cta-book {
+			background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+			color: white !important;
+			border: none !important;
+			font-weight: 700;
+			letter-spacing: 0.15em;
+			padding: 18px 50px !important;
+			font-size: 1.1em !important;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+			text-align: center !important;
+			display: inline-flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			width: auto !important;
+			min-width: 200px;
+		}
+
+		.cta-book:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+			background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+		}
+
+		.cta-book:active {
+			transform: translateY(0);
+		}
+
+		/* Tab Content Visibility */
+		.tab-content {
+			display: none;
+		}
+
+		.tab-content.active {
+			display: block;
+		}
+
+		/* Ensure posts grid layout is preserved */
+		.tab-content .posts {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			text-align: center;
+			width: 100%;
+			padding: 0;
+		}
+
+		.tab-content .posts > article {
+			flex-shrink: 1;
+			flex-grow: 0;
+			width: 50%;
+			padding: 4rem;
+			border-color: #eeeeee;
+			border-left-width: 2px;
+			border-style: solid;
+			border-top-width: 2px;
+			text-align: center;
+		}
+
+		.tab-content .posts > article:nth-child(2n - 1) {
+			border-left-width: 0;
+		}
+
+		.tab-content .posts > article:nth-child(-n + 2) {
+			border-top-width: 0;
+		}
+
+		@media screen and (max-width: 980px) {
+			.tab-content .posts > article {
+				width: 50%;
+				padding: 2.5rem;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.tab-content .posts > article {
+				width: 100%;
+				padding: 2rem;
+			}
+
+			.tab-content .posts > article:nth-child(2n - 1) {
+				border-left-width: 2px;
+			}
+
+			.tab-content .posts > article:nth-child(n) {
+				border-top-width: 2px;
+			}
+
+			.tab-content .posts > article:nth-child(1) {
+				border-top-width: 0;
+			}
+		}
+
 		/* Center the actions list in hero */
 		#intro .actions {
 			justify-content: center;
@@ -100,7 +194,7 @@
 				Open to remote senior backend/full-stack roles and strategic partnerships. Let's build something that scales.
 			</p>
 			<ul class="actions">
-				<li><a href="mailto:immanuelwandeto@proton.me" class="button large cta-hire">Hire Me</a></li>
+
 				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">View Work</a></li>
 			</ul>
 		</div>
@@ -108,7 +202,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="index.html">Portfolio</a></li>
+				<li class="active" data-tab="engineering"><a href="#engineering">Engineering</a></li>
+				<li data-tab="music"><a href="#music">Music</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/immanuel-wandeto/" class="icon brands fa-linkedin" target="_blank"><span
@@ -122,6 +217,9 @@
 
 		<!-- Main -->
 		<div id="main">
+
+			<!-- Engineering Portfolio Tab -->
+			<div id="engineering-content" class="tab-content active">
 
 			<!-- Featured Post -->
 			<article class="post featured">
@@ -383,6 +481,116 @@
 
 			</section>
 
+			</div>
+			<!-- End Engineering Portfolio Tab -->
+
+			<!-- Music Portfolio Tab -->
+			<div id="music-content" class="tab-content">
+
+				<!-- Featured Music Project -->
+				<article class="post featured">
+					<header class="major">
+						<h2>
+							IMMANUEL WANDETO — Singer & Songwriter
+						</h2>
+						<p>
+							<strong>Genre:</strong> RnB, Afro, Soul
+							<br><br>
+							A creative technologist who brings the same precision and passion from engineering to music. Over 6 years of songwriting and vocal performance, blending RnB and Afro genres with authentic storytelling.
+							<br><br>
+							<strong>Philosophy:</strong> Great engineering requires creative thinking — and great music requires technical discipline. The intersection of both worlds creates something unique.
+							<br><br>
+							Available for live performances, studio sessions, and collaborations.
+						</p>
+					</header>
+					<ul class="actions special">
+						<li><a href="mailto:immanuelwandeto@proton.me?subject=Music Booking Inquiry" class="button large cta-book">Book Me</a></li>
+					</ul>
+				</article>
+
+				<!-- SoundCloud Embeds Section -->
+				<section class="posts">
+					<!-- SoundCloud Embed Placeholder 1 -->
+					<article>
+						<header>
+							<h2>Bembeleza</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259085625&color=%233c343c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/bembeleza" title="Bembeleza" target="_blank" style="color: #cccccc; text-decoration: none;">Bembeleza</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							Ever felt like you're giving 100% but all you get back is drama? "Bembeleza" is for everyone tired of the games but still deep in love.
+							Mixing Swahili vibes with a touch of Gĩkũyũ soul, this track explores the fine line between "nakulombotove" and "sitaku-bembeleza."
+						</p>
+					</article>
+
+					<!-- SoundCloud Embed Placeholder 2 -->
+					<article>
+						<header>
+							<h2>P.O.V</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259092891&color=%233c2c20&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/p-o-v" title="P.O.V" target="_blank" style="color: #cccccc; text-decoration: none;">P.O.V</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							Late night thoughts, unfiltered emotions, and a simple request: see things from my point of view.
+							From the chaos and gin to the spoken word breakdown, this is for anyone who has ever felt unheard in love. Don't bottle it up.
+						</p>
+					</article>
+
+					<!-- SoundCloud Embed Placeholder 3 -->
+					<article>
+						<header>
+							<h2>Collage Highs</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259086858&color=%2324232b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/collage-highs" title="Collage Highs" target="_blank" style="color: #cccccc; text-decoration: none;">Collage Highs</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							Written to induce nostalgia. "College Highs" takes you back to that young, reckless campus love.
+							A polaroid of that time when you fell inlove with someone without having found yourself yet. Taking long walks just to keep the conversation going.
+
+
+						</p>
+					</article>
+
+					<!-- SoundCloud Embed Placeholder 4 -->
+					<article>
+						<header>
+							<h2>Stage Fights</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259155942&color=%23472f25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/stage-fights" title="Stage Fights" target="_blank" style="color: #cccccc; text-decoration: none;">Stage Fights</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							This track dives into the shadows of a relationship that feels more like a performance than love.
+							It’s about the smoking mirrors, keeping up appearances, and the "beige dreams" that keep us trapped.
+							When 2 people stay together nursing heartbreaks, scared to leave. Scared to be lonely.
+						</p>
+					</article>
+
+					<!-- SoundCloud Embed Placeholder 5 -->
+					<article>
+						<header>
+							<h2>Lethal Weapon</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259103886&color=%23474454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/lethal-weapon" title="Lethal Weapon" target="_blank" style="color: #cccccc; text-decoration: none;">Lethal Weapon</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							One time, two times... by the fourth time, you know it’s what's up.
+							This is that high-octane anthem about undeniable chemistry. When the attraction is a lethal weapon, even a saint starts tripping.
+							I'm talking about that kind of beauty that makes you act a fool.
+						</p>
+					</article>
+
+					<!-- SoundCloud Embed Placeholder 6 -->
+					<article>
+						<header>
+							<h2>Someone Like You</h2>
+						</header>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2259120989&color=%233b2c25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/immanuelwandeto" title="Wandeto" target="_blank" style="color: #cccccc; text-decoration: none;">Wandeto</a> · <a href="https://soundcloud.com/immanuelwandeto/someone-like-you-prod-by-sam" title="Someone Like You (prod by Sam Calisto)" target="_blank" style="color: #cccccc; text-decoration: none;">Someone Like You (prod by Sam Calisto)</a></div>
+						<p style="margin-top: 1rem; text-align: center; color: #888;">
+							We've been on this road many, many times... but the destination is always the same. You.
+							This track is dedicated to the love that stays, even when it strays, even when the bags are packed.
+							It explores the cycle of conflict and resolution. It's an admission that no matter how hard it gets, nobody else compares.🤞🏾
+						</p>
+					</article>
+				</section>
+
+			</div>
+			<!-- End Music Portfolio Tab -->
+
 		</div>
 
 		<!-- Footer -->
@@ -424,6 +632,44 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<!-- Tab Switching Script -->
+	<script>
+		(function($) {
+			// Tab switching functionality
+			$('#nav .links li').on('click', function(e) {
+				var tab = $(this).data('tab');
+
+				if (tab) {
+					e.preventDefault();
+
+					// Update active tab
+					$('#nav .links li').removeClass('active');
+					$(this).addClass('active');
+
+					// Show corresponding content
+					$('.tab-content').removeClass('active');
+					$('#' + tab + '-content').addClass('active');
+
+					// Update footer CTA based on active tab
+					if (tab === 'music') {
+						$('footer .cta-hire').removeClass('cta-hire').addClass('cta-book').text('Book Me')
+							.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Music Booking Inquiry');
+						$('footer h3').first().text('Ready to collaborate?');
+						$('footer p').first().text("Let's create something memorable together.");
+					} else {
+						$('footer .cta-book').removeClass('cta-book').addClass('cta-hire').text('Hire Me')
+							.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Engineering Work Inquiry');
+						$('footer h3').first().text('Ready to work together?');
+						$('footer p').first().text("Let's discuss your project or opportunity.");
+					}
+
+					// Scroll to top
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				}
+			});
+		})(jQuery);
+	</script>
 
 </body>
 
