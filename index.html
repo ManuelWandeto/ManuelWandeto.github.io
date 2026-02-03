@@ -174,6 +174,54 @@
 		footer#footer button {
 			color: white important!
 		}
+
+		/* Mobile Tab Toggles in Intro */
+		.mobile-tabs {
+			display: none;
+			list-style: none;
+			padding: 0;
+			margin: 2rem 0 1rem 0;
+			justify-content: center;
+			gap: 1rem;
+		}
+
+		.mobile-tabs li {
+			display: inline-block;
+		}
+
+		.mobile-tabs li a {
+			display: inline-block;
+			padding: 0.75rem 2rem;
+			background: rgba(255, 255, 255, 0.1);
+			border: 2px solid rgba(255, 255, 255, 0.3);
+			border-radius: 4px;
+			color: rgba(255, 255, 255, 0.7);
+			text-decoration: none;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			font-size: 0.9em;
+			transition: all 0.3s ease;
+		}
+
+		.mobile-tabs li.active a {
+			background: rgba(255, 255, 255, 0.2);
+			border-color: rgba(255, 255, 255, 0.6);
+			color: #ffffff;
+		}
+
+		.mobile-tabs li a:hover {
+			background: rgba(255, 255, 255, 0.15);
+			border-color: rgba(255, 255, 255, 0.5);
+			color: #ffffff;
+		}
+
+		/* Show mobile tabs only on mobile */
+		@media screen and (max-width: 980px) {
+			.mobile-tabs {
+				display: flex;
+			}
+		}
 	</style>
 </head>
 
@@ -193,6 +241,13 @@
 				<br><br>
 				Open to remote senior backend/full-stack roles and strategic partnerships. Let's build something that scales.
 			</p>
+
+			<!-- Mobile Tab Toggles -->
+			<ul class="mobile-tabs">
+				<li class="active" data-tab="engineering"><a href="#engineering">Engineering</a></li>
+				<li data-tab="music"><a href="#music">Music</a></li>
+			</ul>
+
 			<ul class="actions">
 
 				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">View Work</a></li>
@@ -637,35 +692,39 @@
 	<script>
 		(function($) {
 			// Tab switching functionality
-			$('#nav .links li').on('click', function(e) {
+			function switchTab(tab) {
+				// Update active tab in both nav and mobile tabs
+				$('#nav .links li, .mobile-tabs li').removeClass('active');
+				$('#nav .links li[data-tab="' + tab + '"], .mobile-tabs li[data-tab="' + tab + '"]').addClass('active');
+
+				// Show corresponding content
+				$('.tab-content').removeClass('active');
+				$('#' + tab + '-content').addClass('active');
+
+				// Update footer CTA based on active tab
+				if (tab === 'music') {
+					$('footer .cta-hire').removeClass('cta-hire').addClass('cta-book').text('Book Me')
+						.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Music Booking Inquiry');
+					$('footer h3').first().text('Ready to collaborate?');
+					$('footer p').first().text("Let's create something memorable together.");
+				} else {
+					$('footer .cta-book').removeClass('cta-book').addClass('cta-hire').text('Hire Me')
+						.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Engineering Work Inquiry');
+					$('footer h3').first().text('Ready to work together?');
+					$('footer p').first().text("Let's discuss your project or opportunity.");
+				}
+
+				// Scroll to top
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+
+			// Bind click events to both nav and mobile tabs
+			$('#nav .links li, .mobile-tabs li').on('click', function(e) {
 				var tab = $(this).data('tab');
 
 				if (tab) {
 					e.preventDefault();
-
-					// Update active tab
-					$('#nav .links li').removeClass('active');
-					$(this).addClass('active');
-
-					// Show corresponding content
-					$('.tab-content').removeClass('active');
-					$('#' + tab + '-content').addClass('active');
-
-					// Update footer CTA based on active tab
-					if (tab === 'music') {
-						$('footer .cta-hire').removeClass('cta-hire').addClass('cta-book').text('Book Me')
-							.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Music Booking Inquiry');
-						$('footer h3').first().text('Ready to collaborate?');
-						$('footer p').first().text("Let's create something memorable together.");
-					} else {
-						$('footer .cta-book').removeClass('cta-book').addClass('cta-hire').text('Hire Me')
-							.attr('href', 'mailto:immanuelwandeto@proton.me?subject=Engineering Work Inquiry');
-						$('footer h3').first().text('Ready to work together?');
-						$('footer p').first().text("Let's discuss your project or opportunity.");
-					}
-
-					// Scroll to top
-					window.scrollTo({ top: 0, behavior: 'smooth' });
+					switchTab(tab);
 				}
 			});
 		})(jQuery);
